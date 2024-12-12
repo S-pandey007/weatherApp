@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/weatherApp/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input class="input-box" type="text" placeholder="Enter your Location">
+                
+                <button id="searchBtn" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+        <div class="location-not-found">
+            <h1>Sorry Location not found!!!s</h1>
+            <img src="/weatherApp/images/404.png" alt="404 Error">
+        </div>
+        <div class="weather-body">
+           <img src="/weatherApp/images/cloud.png" alt="Wather image" class="weather-image"> 
+            
+           <div class="weather-box">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">Light rain</p>
+           </div>
+           <div class="weather-details">
+            <div class="humidity">
+                <img id="humidity-icon" src="/weatherApp/images/humidity.png" alt="">
+                <div class="text">
+                    <span id="humidity">0%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span id="wind-speed">0km/h</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+
+
+           </div>
+        </div>
+    </div>
+    <script src="/weatherApp/script.js"></script>
+</body>
+</html>
